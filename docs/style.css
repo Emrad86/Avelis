@@ -1,0 +1,202 @@
+.avelis-root{color-scheme:dark;--bg:#0a1019;--panel:#121c29;--border:#273647;--muted:#a0b1c4;--text:#edf4fa;--mint:#6ee7bd;--red:#ff9aab;--amber:#ffd191;--blue:#87b9ff}
+.avelis-root *{box-sizing:border-box}
+.avelis-root{margin:0;background:radial-gradient(ellipse at 85% 0,#152c3c 0,transparent 40%),var(--bg);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text)}
+.avelis-root button,.avelis-root input,.avelis-root select,.avelis-root textarea{font:inherit;color:inherit}
+.avelis-root button{cursor:pointer;border:1px solid var(--border);border-radius:10px;background:#203244;padding:10px 15px;font-weight:600}
+.avelis-root button:hover{background:#2d4357}
+.avelis-root button.primary{background:var(--mint);color:#09251e;border:0}
+.avelis-root button.danger{color:var(--red)}
+.avelis-root button:disabled{opacity:.45;cursor:not-allowed}
+.avelis-root input,.avelis-root select,.avelis-root textarea{width:100%;background:#0b1420;border:1px solid #344456;border-radius:9px;padding:10px 12px;min-height:44px}
+.avelis-root input[type=checkbox]{width:18px;min-height:18px;accent-color:var(--mint)}
+.avelis-root input:focus,.avelis-root select:focus,.avelis-root textarea:focus{outline:2px solid var(--mint);outline-offset:1px}
+.avelis-root label{display:block;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.02em}
+.avelis-root label input,.avelis-root label select{display:block;margin-top:5px;font-size:16px;color:var(--text)}
+.avelis-root aside{position:fixed;top:0;bottom:0;width:224px;background:#0d1621;border-right:1px solid var(--border);padding:25px 15px;display:flex;flex-direction:column;gap:22px}
+.avelis-root .brand{font-size:21px;font-weight:750;letter-spacing:-.06em;padding:0 8px}
+.avelis-root .brand em{font-style:normal;color:var(--mint)}
+.avelis-root .brand small{display:block;font-size:10px;letter-spacing:.15em;color:var(--muted);font-weight:500}
+.avelis-root nav{display:flex;flex-direction:column;gap:5px}
+.avelis-root nav button{text-align:left;background:transparent;border-color:transparent;color:var(--muted);font-weight:500}
+.avelis-root nav button.active{background:#203244;border-color:#345165;color:var(--mint)}
+.avelis-root aside footer{margin-top:auto;font-size:11px;color:var(--muted)}
+.avelis-root main{margin-left:224px;padding:35px 4vw 70px;max-width:1650px}
+.avelis-root header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:25px}
+.avelis-root h1{font-size:clamp(26px,3vw,38px);letter-spacing:-.045em;line-height:1.2;margin:0 0 6px}
+.avelis-root h2{font-size:19px;letter-spacing:-.02em;margin:0 0 14px}
+.avelis-root h3{font-size:15px;margin:0 0 8px}
+.avelis-root p{margin:5px 0 15px}
+.avelis-root .muted,.avelis-root small{color:var(--muted)}
+.avelis-root .tiny{font-size:12px}
+.avelis-root .eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);font-weight:700}
+.avelis-root .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-bottom:16px}
+.avelis-root .two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.avelis-root .card{background:linear-gradient(150deg,#162333,#111b27);border:1px solid var(--border);border-radius:16px;padding:19px;min-width:0;margin-bottom:15px}
+.avelis-root .grid>.card{margin:0}
+.avelis-root .metric{font-size:clamp(24px,3vw,33px);font-weight:700;letter-spacing:-.045em;font-variant-numeric:tabular-nums;line-height:1.3;margin:8px 0}
+.avelis-root .good{color:var(--mint)}
+.avelis-root .bad{color:var(--red)}
+.avelis-root .warn{color:var(--amber)}
+.avelis-root .row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.avelis-root .fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:13px;margin:12px 0}
+.avelis-root .tablewrap{overflow-x:auto}
+.avelis-root table{width:100%;border-collapse:collapse;font-size:13px;text-align:left;white-space:nowrap}
+.avelis-root th{color:var(--muted);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.avelis-root th,.avelis-root td{padding:11px 10px;border-bottom:1px solid var(--border)}
+.avelis-root td.num,.avelis-root th.num{text-align:right;font-variant-numeric:tabular-nums}
+.avelis-root tr:last-child td{border:0}
+.avelis-root .pill{display:inline-block;padding:3px 9px;border-radius:20px;background:#24384a;color:var(--muted);font-size:11px}
+.avelis-root .bar{height:9px;border-radius:8px;background:#25384a;overflow:hidden;display:flex;margin:12px 0}
+.avelis-root .bar span{height:100%}
+.avelis-root .notice{padding:12px 14px;border-left:3px solid var(--amber);background:#382f26;border-radius:5px;color:#ffe0ba;font-size:13px;margin:12px 0}
+.avelis-root .line{border-top:1px solid var(--border);margin:12px 0}
+.avelis-root .chart{width:100%;height:auto;display:block}
+.avelis-root .debt{border:1px solid var(--border);border-radius:12px;padding:15px;margin:12px 0;background:#101b28}
+.avelis-root .debt summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.avelis-root .debt summary::-webkit-details-marker{display:none}
+.avelis-root .debt summary:after{content:"+";color:var(--muted)}
+.avelis-root .debt[open] summary:after{content:"−"}
+.avelis-root .check{display:flex;align-items:center;gap:8px;margin:10px 0;color:var(--text);font-size:14px}
+.avelis-root .check input{margin:0}
+.avelis-root .status{font-size:12px;color:var(--muted)}
+.avelis-root .actions{display:flex;gap:8px;flex-wrap:wrap}
+.avelis-root .calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
+.avelis-root .day{padding:7px;min-height:66px;border-radius:8px;border:1px solid var(--border);font-size:11px;overflow:hidden}
+.avelis-root .day b{display:block;font-size:13px}
+.avelis-root .day.negative{background:#3c2631}
+.avelis-root .day.positive{background:#15352e}
+.avelis-root .dayhead{text-align:center;color:var(--muted);font-size:12px}
+.avelis-root .blank{border:0}
+.avelis-root .mobile-title{display:none}
+.avelis-root #toast{position:fixed;right:15px;bottom:15px;background:#263c4d;padding:10px 16px;border:1px solid var(--border);border-radius:10px;z-index:10;display:none}
+.avelis-root a{color:var(--blue)}
+@container avelis (max-width:760px){.avelis-root aside{position:sticky;top:0;width:100%;height:auto;padding:12px 12px 7px;gap:7px;z-index:5;background:#0d1621f5;backdrop-filter:blur(20px);border-right:0;border-bottom:1px solid var(--border)}
+.avelis-root aside footer{display:none}
+.avelis-root nav{flex-direction:row;overflow-x:auto;scrollbar-width:none}
+.avelis-root nav button{white-space:nowrap;padding:7px 10px;font-size:13px}
+.avelis-root .brand{font-size:18px}
+.avelis-root .brand small{display:inline;margin-left:10px}
+.avelis-root main{margin:0;padding:20px 14px 50px}
+.avelis-root .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.avelis-root .two{grid-template-columns:1fr}
+.avelis-root .card{padding:14px;border-radius:13px}
+.avelis-root .metric{font-size:25px}
+.avelis-root .fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+.avelis-root .day{padding:4px;min-height:54px;font-size:9px}
+.avelis-root header{align-items:flex-start}
+.avelis-root header .status{max-width:85px;text-align:right}
+.avelis-root .wide{grid-column:1/-1}}
+@container avelis (max-width:365px){.avelis-root .fields{grid-template-columns:1fr}
+.avelis-root .metric{font-size:22px}}
+@media print{.avelis-root aside,.avelis-root button,.avelis-root #toast{display:none!important}
+.avelis-root main{margin:0;color:black;background:white}
+.avelis-root .card{background:white;border:1px solid #ddd;color:black}
+.avelis-root{background:white;color:black}}
+.avelis-root{--bg:#080c14;--panel:#101927;--border:#263448;--text:#f0f5fb;--muted:#98a9bf;--mint:#63e8b4;--red:#ff889d;--amber:#ffd08b;--blue:#8dbaff;--shadow:0 22px 50px #0003}
+.avelis-root{scroll-behavior:smooth}
+.avelis-root{background:radial-gradient(ellipse at 90% -10%,#203d4c 0,transparent 42%),radial-gradient(ellipse at 30% 80%,#17223c 0,transparent 50%),var(--bg);background-attachment:fixed;letter-spacing:-.012em}
+.avelis-root aside{width:244px;padding:28px 18px;background:#101722d9;backdrop-filter:blur(30px);border-color:#ffffff0e;gap:30px}
+.avelis-root .brand{font-size:27px;display:flex;align-items:center;gap:11px;letter-spacing:-.055em}
+.avelis-root .brand small{font-size:9px;letter-spacing:.17em;margin-top:2px}
+.avelis-root .brand-icon{width:43px;height:43px;border-radius:14px;background:linear-gradient(140deg,#7cecc6,#257a6e);box-shadow:0 7px 25px #54d5b335;display:grid;place-items:center;color:#09271f;flex:none}
+.avelis-root .brand-icon svg{width:27px;height:27px}
+.avelis-root nav button{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:13px;font-size:14px}
+.avelis-root nav button svg{width:19px;height:19px;flex:none;stroke-width:1.7}
+.avelis-root nav button.active{background:linear-gradient(110deg,#28534891,#1a2e3e70);border:1px solid #63e8b425;box-shadow:inset 3px 0 #63e8b4;color:#b2f6df}
+.avelis-root main{margin-left:244px;max-width:1800px;padding:37px clamp(22px,3.2vw,64px) 70px}
+.avelis-root header{margin-bottom:28px}
+.avelis-root h1{font-weight:650;font-size:clamp(30px,3.2vw,46px)}
+.avelis-root h2{font-weight:650;font-size:19px}
+.avelis-root header .status{padding:9px 12px;border:1px solid var(--border);border-radius:30px;background:#ffffff06;white-space:nowrap}
+.avelis-root .header-actions{display:flex;gap:8px;align-items:center}
+.avelis-root .theme-toggle{padding:8px 13px;border-radius:30px;background:transparent}
+.avelis-root .card{position:relative;overflow:hidden;background:linear-gradient(142deg,#ffffff08,#ffffff02),var(--panel);box-shadow:var(--shadow);border:1px solid #a8c7f019;border-radius:22px;padding:22px}
+.avelis-root .grid{gap:14px}
+.avelis-root .metric{font-weight:650;font-size:clamp(25px,2.6vw,37px)}
+.avelis-root .grid>.card:before{content:"";position:absolute;top:0;left:20px;right:20px;height:1px;background:linear-gradient(90deg,transparent,#9cc0e54a,transparent)}
+.avelis-root button{border-radius:12px;background:#25364a;color:var(--text);transition:background .18s,transform .18s}
+.avelis-root button:active{transform:scale(.98)}
+.avelis-root button.primary{background:linear-gradient(135deg,#8bf5ce,#54cba0);box-shadow:0 5px 18px #4bcba328}
+.avelis-root input,.avelis-root select,.avelis-root textarea{background:#080f1b90;border-color:#61789655;border-radius:12px}
+.avelis-root .debt{background:#ffffff03;border-radius:16px}
+.avelis-root .bar{height:12px;border-radius:12px}
+.avelis-root .notice{border:1px solid #e7b46e35;background:#b9873413;border-radius:13px;color:var(--amber);border-left:3px solid var(--amber)}
+.avelis-root .hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(170px,.75fr);gap:24px;align-items:center;padding:30px;min-height:220px;background:radial-gradient(ellipse at 85% 45%,#377d682f,transparent 60%),linear-gradient(120deg,#162d3b,#14212c 65%,#102526);border-color:#78e8b937}
+.avelis-root .hero .big{font-size:clamp(42px,6vw,76px);font-weight:610;letter-spacing:-.07em;line-height:1.06;margin:12px 0}
+.avelis-root .hero .hero-sub{max-width:540px;color:#a9c5cb}
+.avelis-root .hero .orbit{max-width:220px;width:100%;justify-self:center}
+.avelis-root .hero .orbit text{fill:#e8f8f2}
+.avelis-root .hero .pill{background:#65e8b41a;color:#a6f0d6}
+.avelis-root .hero .actions{margin-top:18px}
+.avelis-root .hero .actions button:not(.primary){background:#ffffff08}
+.avelis-root .chart-shell{position:relative}
+.avelis-root .chart-tip{position:absolute;top:10px;right:10px;white-space:pre-line;pointer-events:none;padding:9px 13px;border-radius:12px;background:var(--panel);border:1px solid var(--border);box-shadow:var(--shadow);font-size:12px;display:none;z-index:2}
+.avelis-root .chart{touch-action:pan-y;overflow:visible}
+.avelis-root .chart text{fill:var(--muted)}
+.avelis-root .chart-axis{stroke:var(--border)}
+.avelis-root .chart-glow{filter:drop-shadow(0 0 6px #63e8b455)}
+.avelis-root .kicker{font-size:10px;letter-spacing:.18em;color:var(--mint);font-weight:700;text-transform:uppercase}
+.avelis-root .syncbox{border:1px solid var(--border);border-radius:14px;padding:15px;margin:10px 0;background:#ffffff04}
+.avelis-root .syncbox .row{margin:5px 0}
+.avelis-root .bottom-caption{font-size:11px;color:var(--muted)}
+.avelis-root .day{min-height:74px;border-radius:12px}
+.avelis-root .day.positive{background:#54cba014}
+.avelis-root .day.negative{background:#fa77941c}
+.avelis-root .tablewrap{border-radius:10px}
+.avelis-root .card .row+.row{margin-top:8px}
+.avelis-root .mini-nav{display:none}
+.avelis-root .progress-row{margin:11px 0}
+.avelis-root .progress-row .bar{margin:7px 0}
+.avelis-root .fade-in{animation:appear .28s ease-out both}
+@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.avelis-root[data-theme=light]{color-scheme:light;--bg:#eef2f7;--panel:#fcfdff;--border:#d9e1ed;--text:#14243a;--muted:#54677c;--mint:#087a58;--red:#b33952;--amber:#905d00;--blue:#2364aa;--shadow:0 12px 35px #24405b0c}
+.avelis-root[data-theme=light]{background:radial-gradient(ellipse at 95% 0,#cde8e1,transparent 50%),var(--bg)}
+.avelis-root[data-theme=light] aside{background:#f7faffdf;border-color:var(--border)}
+.avelis-root[data-theme=light] nav button.active{background:#d9eee6;color:#086748;box-shadow:inset 3px 0 #087a58}
+.avelis-root[data-theme=light] button{background:#e9eff7;color:var(--text)}
+.avelis-root[data-theme=light] input,.avelis-root[data-theme=light] select,.avelis-root[data-theme=light] textarea{background:#f3f6fa}
+.avelis-root[data-theme=light] .hero{background:radial-gradient(ellipse at 85% 45%,#a9e1ca,transparent 70%),#e6f5f0}
+.avelis-root[data-theme=light] .hero .orbit text{fill:#16362d}
+.avelis-root[data-theme=light] .hero .hero-sub{color:#426b62}
+.avelis-root[data-theme=light] .hero .pill{color:#086748}
+.avelis-root[data-theme=light] .pill{background:#e5edf4;color:#456079}
+.avelis-root[data-theme=light] .bar{background:#e1e8ef}
+.avelis-root[data-theme=light] .card{border-color:#dbe4ee}
+.avelis-root[data-theme=light] .debt{background:#f7f9fc}
+.avelis-root[data-theme=light] #toast{background:#fff}
+.avelis-root[data-theme=light] .day.positive{background:#dff2e9}
+.avelis-root[data-theme=light] .day.negative{background:#fbe3e9}
+@container avelis (max-width:760px){.avelis-root aside{position:sticky;top:0;width:100%;padding:calc(8px + env(safe-area-inset-top)) 15px 9px;gap:9px;background:#101722ec;z-index:6}
+.avelis-root .brand{font-size:22px}
+.avelis-root .brand-icon{width:31px;height:31px;border-radius:10px}
+.avelis-root .brand-icon svg{width:21px;height:21px}
+.avelis-root .brand small{display:block;margin:0;font-size:8px}
+.avelis-root nav{gap:5px;overflow:auto}
+.avelis-root nav button{padding:8px 11px;font-size:12px;gap:5px;flex:none}
+.avelis-root nav button svg{width:15px;height:15px}
+.avelis-root main{margin:0;padding:19px 13px calc(42px + env(safe-area-inset-bottom))}
+.avelis-root header{margin-bottom:16px;gap:5px}
+.avelis-root h1{font-size:29px}
+.avelis-root header .status{font-size:10px;padding:6px 8px;max-width:100px;white-space:normal}
+.avelis-root .header-actions{flex-direction:column;align-items:flex-end;gap:5px}
+.avelis-root .theme-toggle{padding:5px 10px;font-size:12px}
+.avelis-root .card{border-radius:18px;padding:16px}
+.avelis-root .hero{grid-template-columns:1fr;gap:4px;padding:20px}
+.avelis-root .hero .big{font-size:52px}
+.avelis-root .hero .orbit{display:none}
+.avelis-root .hero .hero-sub{font-size:13px}
+.avelis-root .hero .actions{margin-top:12px}
+.avelis-root .grid{gap:8px}
+.avelis-root .grid>.card{padding:13px}
+.avelis-root .metric{font-size:25px}
+.avelis-root .day{min-height:54px;font-size:9px;padding:3px}
+.avelis-root .chart{min-height:125px}
+.avelis-root h2{font-size:17px}
+.avelis-root .tiny{font-size:11px}
+.avelis-root .hero .actions button{font-size:12px;padding:9px 11px}
+.avelis-root .fields{gap:8px}
+.avelis-root label input,.avelis-root label select{font-size:16px}
+.avelis-root #toast{bottom:calc(15px + env(safe-area-inset-bottom));max-width:90vw}}
+@media (prefers-reduced-motion:reduce){.avelis-root *,.avelis-root *::before,.avelis-root *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.avelis-host{height:100%;padding:0!important;overflow:hidden!important;container:avelis / inline-size}.avelis-root{height:100%;overflow:auto;position:relative;isolation:isolate;container:avelis / inline-size;font-family: -apple-system,BlinkMacSystemFont,system-ui,sans-serif;--bg:#101a1b;--panel:#172624;--border:#344840;--text:#edf4ec;--muted:#a9bdb3;--mint:#a5e1c3;--blue:#a5c8e6;--red:#f1a2a3;--amber:#e1bc87;background:radial-gradient(ellipse at 90% 0,#274139 0,transparent 50%),var(--bg)}.avelis-root aside{position:sticky;top:0;height:100%;float:left;background:#12201fe8;width:208px;z-index:5}.avelis-root main{margin-left:208px;max-width:1600px;padding:26px 28px 50px}.avelis-root .brand{font-size:29px;font-weight:550;letter-spacing:-.06em}.avelis-root .brand-icon{background:#a5e1c3;color:#18342b}.avelis-root .brand small{letter-spacing:.1em}.avelis-root .card{border-radius:19px;box-shadow:0 10px 35px #0002}.avelis-root .hero{background:radial-gradient(ellipse at 90% 55%,#538f6f3d,transparent 65%),linear-gradient(135deg,#244139,#182a2c);border-color:#a5e1c344}.avelis-root #toast{position:sticky;bottom:12px;margin:0 auto;z-index:30;right:auto;left:auto;width:max-content;max-width:95%;transform:none}.avelis-root #view{animation:avelis-in .28s ease both}.avelis-root button{min-height:36px}.avelis-root .chart-tip{white-space:pre-line}.avelis-root .profile-row{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--border);padding:12px 0}.avelis-root .profile-row:last-child{border:0}.avelis-root .profile-row p{margin:3px 0;font-size:12px}.avelis-root .intelligence-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.avelis-root .intelligence-grid>.card{margin:0}.avelis-root .signal{font-size:11px;letter-spacing:.1em;color:var(--mint)}.avelis-root .profile-progress{height:8px;border-radius:9px;overflow:hidden;background:var(--border)}.avelis-root .profile-progress span{display:block;height:100%;background:var(--mint);transition:width .4s}.avelis-root[data-theme=light]{--bg:#edf3ef;--panel:#fff;--border:#d6e2dc;--text:#23382f;--muted:#516d61;--mint:#14744f;background:radial-gradient(ellipse at 90% 0,#cce6d6,transparent 50%),var(--bg)}.avelis-root[data-theme=light] aside{background:#f4faf6}.avelis-root[data-theme=light] .hero{background:linear-gradient(135deg,#d6f0e0,#e9f5ee)}@keyframes avelis-in{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}@container avelis (max-width:900px){.avelis-root aside{width:100%;height:auto;float:none;position:sticky;top:0;display:block;padding:9px 12px;background:#12201fef}.avelis-root aside footer{display:none}.avelis-root nav{display:flex;flex-direction:row;overflow-x:auto;gap:4px;padding-top:7px;scrollbar-width:none}.avelis-root nav button{white-space:nowrap;flex:none;min-height:38px}.avelis-root main{margin:0;padding:16px 12px 44px}.avelis-root .brand{font-size:24px}.avelis-root .brand small{display:none}.avelis-root .intelligence-grid{grid-template-columns:1fr}.avelis-root .grid{grid-template-columns:repeat(2,minmax(0,1fr))}.avelis-root .grid.two{grid-template-columns:1fr}.avelis-root .fields{grid-template-columns:repeat(2,minmax(0,1fr))}.avelis-root .hero{grid-template-columns:1fr}.avelis-root .hero .orbit{display:none}.avelis-root .card{padding:15px}.avelis-root h1{font-size:27px}.avelis-root .metric{font-size:clamp(19px,5vw,27px)}}@container avelis (max-width:420px){.avelis-root .fields{grid-template-columns:1fr}.avelis-root .calendar .day{font-size:9px}.avelis-root .metric{font-size:20px}}@media(prefers-reduced-motion:reduce){.avelis-root #view{animation:none}.avelis-root .profile-progress span{transition:none}}
+html,body{margin:0;height:100%;background:#101a1b;font-family:system-ui}body{overflow:hidden}.avelis-root{height:100dvh}.entry{min-height:100dvh;display:grid;place-items:center;padding:24px;box-sizing:border-box;background:radial-gradient(ellipse at 80% 10%,#325247,transparent 60%),#101a1b;color:#e8f4eb}.entry section{width:min(100%,420px);padding:28px;box-sizing:border-box;background:#172624;border:1px solid #375247;border-radius:24px;box-shadow:0 30px 80px #0005}.entry h1{font-size:40px;font-weight:500;letter-spacing:-.07em;margin:0}.entry p{color:#b1c7bb;line-height:1.55}.entry input,.entry button{font:inherit;box-sizing:border-box;width:100%;padding:13px;border-radius:12px;margin:6px 0}.entry input{background:#0d1917;color:white;border:1px solid #456657;font-size:16px}.entry button{background:#a5e1c3;color:#18342b;border:0;font-weight:650;cursor:pointer}.entry button.secondary{background:#283e36;color:#dbefe4}.entry small{display:block;color:#b1c7bb;margin-top:12px}.entry #error{color:#ffacac}.avelis-root aside{padding-top:calc(20px + env(safe-area-inset-top))}@media(max-width:900px){.avelis-root aside{padding-top:calc(8px + env(safe-area-inset-top))}.avelis-root main{padding-bottom:calc(40px + env(safe-area-inset-bottom))}}
