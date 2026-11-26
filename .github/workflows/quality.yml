@@ -22,6 +22,6 @@ jobs:
         if: always()
         with:
           name: avelis-visual-screenshots
-          path: avelis-*-mobile.png
+          path: avelis-*.png
           if-no-files-found: ignore
           retention-days: 7
